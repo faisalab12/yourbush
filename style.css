@@ -1,0 +1,385 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 28px;
+    margin: 1 0 16px 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+p{
+    color: grey;
+    margin: 1 0 16px 0;
+    font-size: 24px;
+}
+
+img, iframe{
+    width: 100%;
+}
+
+.btn{
+    background-color: green;
+    color: white;
+    padding: 8px 20px;
+    
+}
+
+.btn-alt{
+    background-color: white;
+    color: green;
+    margin-right: 15px;
+    border: 2px solid green;
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 100px;
+    position: sticky;
+    top: 0;
+    background-color: green;
+    z-index: 5;
+    
+}
+
+.header a{
+    color: white;
+}
+
+.header h1{
+    margin: 0;
+    animation: bounce 1s;
+}
+
+@keyframes bounce{
+    0%{
+        filter: opacity(0);
+        transform: translateX(-20px);
+    }35%{
+        filter: opacity(0.25);
+        transform: translateY(0);
+    }70%{
+        filter: opacity(0,5);
+        transform: translateY(-10px);
+    }100%{
+        filter: opacity(1);
+        transform: translateY(0);
+    }
+}
+
+/* .btn{
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+    padding: 8px 20px;
+}
+
+.btn + .btn{
+    background-color: green;
+    color: white;
+} */
+
+#landing{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+#landing > div{
+    width: 50%;
+}
+
+#landing p{
+    margin-bottom: 34px;
+}
+
+nav > a {
+    color: green;
+    margin-left: 32px;
+}
+
+nav > a:hover{
+    color: black;
+}
+
+section{
+    padding: 16px 100px;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16x;
+}
+#about .about-content h1{
+    text-align: center ;
+}
+
+.about-stats{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    margin-top: 52px;
+
+}
+
+.about-stats-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-stats-item div{
+    width: 50px;
+    height: 10px;
+    background-color: green;
+    margin-bottom: 18px;
+}
+
+.service-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15x;
+}
+
+.service-header h1{
+    position: relative;
+}
+
+.service-header h1::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("./images/accent1.svg");
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    z-index: -1;
+
+}
+
+.service-content{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    column-gap: 80px;
+    margin-top: 10px;
+
+}
+
+.service-content-items img{
+    width: 100%;
+}
+
+.service-content-items p{
+    font-size: 16px;
+    padding: 0 16px;
+
+}
+
+.service-content-items h2{
+    padding: 0 16px;
+}
+
+.service-content-items{
+    box-shadow: -3px 2px 4px grey;
+}
+
+.service-content-items:hover{
+    transform: scale(1.2);
+    background-color: white;
+}
+
+#contact > h1{
+    position: relative;
+}
+
+#contact > h1::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url(./images/accent2.svg);
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    z-index: -1;
+}
+
+.contact-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-content > div, 
+.contact-content > form{
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form .btn{
+    border: none;
+}
+
+form .btn:hover{
+    /* color: white; */
+    cursor: grab;
+}
+
+.form-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    margin-top: 32px;
+    grid-template-areas: "name email"
+                            "telp asal"
+                            "message message";
+
+}
+
+#name{
+    grid-area: name;
+}
+
+#email{
+    grid-area: email;
+}
+
+#telp{
+    grid-area: telp;
+}
+
+#asal{
+    grid-area: asal;
+}
+
+#message{
+    grid-area: message;
+}
+
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.form-input label{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.form-input input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid green;
+    margin-top: 18px;
+    font-size: 300;
+}
+
+.form-input input:focus{
+    border-bottom: 2px solid black;
+}
+
+footer{
+    padding: 16px 128px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+footer p {
+    font-size: 16px;
+    color: white;
+}
+
+.social-icon{
+    display: flex;
+    gap: 20px;
+}
+
+.copyright{
+    background-color: black;
+    
+}
+
+.copyright p{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+@media only screen and (max-width: 1200px){
+    .service-content{
+        gap: 24px;
+    }
+    .contact-content{
+        gap: 24px;
+    }
+    .form-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width : 992px){
+    .header, footer{
+        padding: 16px 32px;
+    }
+    section{
+        padding: 64px 32px;
+    }
+    #landing{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #landing > div{
+        width: 100%;
+    }
+    #about{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    #about > div{
+        width: 100%;
+    }
+    .service-content{
+        gap: 16px;
+    }
+    .contact-content{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        text-align: center;
+        row-gap: 16px;
+    }
+    .contact-content form ,
+    .contact-content > div{
+        width: 100%;
+    }
+}
