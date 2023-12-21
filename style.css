@@ -300,6 +300,10 @@ form .btn:hover{
     border-bottom: 2px solid black;
 }
 
+.maps{
+    margin-left: 40px;
+}
+
 footer{
     padding: 16px 128px;
     background-color: black;
@@ -382,4 +386,18 @@ footer p {
     .contact-content > div{
         width: 100%;
     }
+}
+
+.logo{
+    display: block;
+}
+
+.payment {
+    margin-left: 10px;
+}
+
+.payment > img{
+    width: 70px;
+    height: 40px;
+    margin: 10px;
 }
