@@ -392,7 +392,8 @@ footer p {
     display: block;
 }
 
-.payment {
+
+.social-icon > a {
     margin-left: 10px;
 }
 
